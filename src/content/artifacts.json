@@ -1,0 +1,55 @@
+{
+  "title": "不只方法论，还有可交付的产出物",
+  "subtitle": "Production Artifacts",
+  "intro": "从短视频内容、直播排期到课程交付和复盘，以下均来自本人实际参与项目，并按独立完成或团队协作标明职责。",
+  "items": [
+    {
+      "image": "/images/chenxi/dalan-profile.jpg",
+      "title": "大蓝内容编导链路",
+      "desc": "参与成熟期账号的选题、脚本、拍摄控场、剪辑与数据复盘；截图用于说明账号背景。",
+      "tag": "DALAN"
+    },
+    {
+      "image": "/images/chenxi/waterbubble-profile.png",
+      "title": "水球泡泡短视频内容",
+      "desc": "独立跑通选题、口播脚本、拍摄控场、剪辑与发布后复盘。",
+      "tag": "SHORT VIDEO"
+    },
+    {
+      "image": "/images/chenxi/qieman-schedule.jpg",
+      "title": "年度直播与课程排期",
+      "desc": "团队共同完成直播排期及课程规划；本人主要负责内容编导与复盘。",
+      "tag": "SCHEDULE"
+    },
+    {
+      "image": "/images/chenxi/qieman-monthly-plan.jpg",
+      "title": "月成长计划",
+      "desc": "围绕AI与自媒体方向组织月度内容节奏，参与课程内容和复盘环节。",
+      "tag": "MONTHLY PLAN"
+    },
+    {
+      "image": "/images/chenxi/qieman-video-results.jpg",
+      "title": "视频流学员成果",
+      "desc": "参与视频流课程项目的内容编导与复盘；图中数据为课程项目整体成果。",
+      "tag": "VIDEO COURSE"
+    },
+    {
+      "image": "/images/chenxi/qieman-writing-results.jpg",
+      "title": "文字流学员成果",
+      "desc": "参与课程内容与交付复盘；图中变现与内容数据为课程项目整体成果。",
+      "tag": "WRITING COURSE"
+    },
+    {
+      "image": "/images/chenxi/qieman-growth-review.jpg",
+      "title": "学员成长复盘",
+      "desc": "通过真实账号案例呈现阶段变化，为后续课程内容和学员行动提供参考。",
+      "tag": "REVIEW"
+    },
+    {
+      "image": "/images/chenxi/qieman-member-assets.jpg",
+      "title": "会员内容资产",
+      "desc": "参与周刊、月成长计划、视频流及文字流课程等持续内容资产的协同交付。",
+      "tag": "MEMBER ASSETS"
+    }
+  ]
+}

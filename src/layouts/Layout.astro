@@ -1,0 +1,67 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "陈曦 — 新媒体编导 / IP 操盘 / 内容运营",
+  description = "陈曦个人作品集：约 5 年视频内容与新媒体经验，聚焦知识付费、老板 IP、内容编导与商业转化。",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-white text-[var(--color-ink)]">
+    <slot />
+
+    <script>
+      const els = document.querySelectorAll<HTMLElement>(".reveal");
+      const io = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-visible");
+              io.unobserve(e.target);
+            }
+          }
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
+      );
+      els.forEach((el) => io.observe(el));
+
+      const counters = document.querySelectorAll<HTMLElement>("[data-countup]");
+      const cIO = new IntersectionObserver(
+        (entries) => {
+          for (const e of entries) {
+            if (!e.isIntersecting) continue;
+            const el = e.target as HTMLElement;
+            const target = Number(el.dataset.countup || "0");
+            const duration = 1400;
+            const start = performance.now();
+            const ease = (t: number) => 1 - Math.pow(1 - t, 3);
+            const tick = (now: number) => {
+              const p = Math.min(1, (now - start) / duration);
+              el.textContent = Math.round(target * ease(p)).toString();
+              if (p < 1) requestAnimationFrame(tick);
+              else el.textContent = target.toString();
+            };
+            requestAnimationFrame(tick);
+            cIO.unobserve(el);
+          }
+        },
+        { threshold: 0.5 }
+      );
+      counters.forEach((el) => cIO.observe(el));
+    </script>
+  </body>
+</html>

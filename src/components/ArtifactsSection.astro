@@ -1,0 +1,94 @@
+---
+import data from "../content/artifacts.json";
+import { imgSrc } from "../utils/img";
+
+// 前 4 项为内容与排期，后 4 项为课程交付与复盘
+const dataItems = data.items.slice(0, 4);
+const teamItems = data.items.slice(4);
+---
+
+<section id="artifacts" class="bg-[var(--color-bg-soft)] px-6 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-14 md:mb-20 max-w-4xl">
+      <p class="text-sm text-[var(--color-ink-muted)] tracking-widest uppercase mb-3">
+        {data.subtitle}
+      </p>
+      <h2 class="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1]">
+        {data.title}
+      </h2>
+      <p class="mt-6 text-lg md:text-xl text-[var(--color-ink-muted)] leading-relaxed">
+        {data.intro}
+      </p>
+    </div>
+
+    <div class="mb-10 md:mb-14">
+      <p class="reveal text-xs text-[var(--color-ink-muted)] tracking-widest uppercase mb-5">
+        IP Content & Planning · IP 内容与排期
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        {
+          dataItems.map((it) => (
+            <figure class="reveal group bg-white rounded-2xl overflow-hidden border border-[var(--color-line)] hover:shadow-2xl hover:shadow-black/10 transition-shadow duration-500">
+              <div class="aspect-[3/4] overflow-hidden bg-[var(--color-bg-soft)] relative">
+                <img
+                  src={imgSrc(it.image)}
+                  alt={it.title}
+                  class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700"
+                  loading="lazy"
+                />
+                <span class="absolute top-2.5 left-2.5 text-[10px] font-mono tracking-widest px-2 py-0.5 rounded-full bg-black/70 text-white backdrop-blur-sm">
+                  {it.tag}
+                </span>
+              </div>
+              <figcaption class="p-4 md:p-5">
+                <h3 class="text-sm md:text-base font-semibold tracking-tight mb-1.5">
+                  {it.title}
+                </h3>
+                <p class="text-xs text-[var(--color-ink-muted)] leading-relaxed line-clamp-3">
+                  {it.desc}
+                </p>
+              </figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </div>
+
+    <div>
+      <p class="reveal text-xs text-[var(--color-ink-muted)] tracking-widest uppercase mb-5">
+        Course Delivery & Review · 课程交付与复盘
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+        {
+          teamItems.map((it) => (
+            <figure class="reveal group bg-white rounded-2xl overflow-hidden border border-[var(--color-line)] hover:shadow-2xl hover:shadow-black/10 transition-shadow duration-500">
+              <div class="aspect-[3/4] overflow-hidden bg-[var(--color-bg-soft)] relative">
+                <img
+                  src={imgSrc(it.image)}
+                  alt={it.title}
+                  class="w-full h-full object-cover object-top group-hover:scale-[1.03] transition-transform duration-700"
+                  loading="lazy"
+                />
+                <span class="absolute top-2.5 left-2.5 text-[10px] font-mono tracking-widest px-2 py-0.5 rounded-full bg-black/70 text-white backdrop-blur-sm">
+                  {it.tag}
+                </span>
+              </div>
+              <figcaption class="p-4 md:p-5">
+                <h3 class="text-sm md:text-base font-semibold tracking-tight mb-1.5">
+                  {it.title}
+                </h3>
+                <p class="text-xs text-[var(--color-ink-muted)] leading-relaxed line-clamp-3">
+                  {it.desc}
+                </p>
+              </figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </div>
+
+    <p class="reveal mt-14 md:mt-20 text-sm text-[var(--color-ink-muted)] text-center">
+      展示内容均来自实际参与项目；个人与团队成果已按职责标注。
+    </p>
+  </div>
+</section>

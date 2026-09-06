@@ -1,0 +1,63 @@
+---
+import { base, home } from "../utils/img";
+
+// 判断当前是否在主页：详情页里的 nav 锚点要带上 home 前缀，跳回主页对应位置
+const cleanPath = Astro.url.pathname.replace(/\/$/, "");
+const isHomePage = cleanPath === base || cleanPath === "" || cleanPath === "/";
+const prefix = isHomePage ? "" : home;
+
+const links = [
+  { href: `${prefix}#about`, label: "关于" },
+  { href: `${prefix}#stats`, label: "成果" },
+  { href: `${prefix}#experience`, label: "经历" },
+  { href: `${prefix}#cases`, label: "项目" },
+  { href: `${prefix}#works`, label: "作品" },
+  { href: `${prefix}#artifacts`, label: "交付物" },
+  { href: `${prefix}#ai`, label: "复盘" },
+  { href: `${prefix}#contact`, label: "联系" },
+];
+---
+
+<nav
+  id="site-nav"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 backdrop-blur-md bg-white/70 border-b border-transparent"
+>
+  <div class="max-w-6xl mx-auto px-6 h-12 flex items-center justify-between text-[13px]">
+    <a href={home} class="font-medium tracking-tight">陈曦</a>
+    <ul class="hidden md:flex gap-6 text-[var(--color-ink-muted)]">
+      {
+        links.map((l) => (
+          <li>
+            <a
+              href={l.href}
+              class="hover:text-[var(--color-ink)] transition-colors duration-200"
+            >
+              {l.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <a
+      href={`${prefix}#contact`}
+      class="text-[12px] px-3 py-1 rounded-full bg-black text-white hover:bg-[var(--color-ink)] transition-colors"
+      >联系我</a
+    >
+  </div>
+</nav>
+
+<script>
+  const nav = document.getElementById("site-nav");
+  const onScroll = () => {
+    if (!nav) return;
+    if (window.scrollY > 24) {
+      nav.classList.add("border-[var(--color-line)]");
+      nav.classList.remove("border-transparent");
+    } else {
+      nav.classList.remove("border-[var(--color-line)]");
+      nav.classList.add("border-transparent");
+    }
+  };
+  document.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+</script>

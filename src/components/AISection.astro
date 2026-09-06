@@ -1,0 +1,78 @@
+---
+import ai from "../content/ai_stack.json";
+---
+
+<section id="ai" class="bg-black text-white px-6 py-24 md:py-32 relative overflow-hidden">
+  <div
+    class="absolute inset-0 pointer-events-none opacity-60"
+    style="background: radial-gradient(circle at 20% 0%, rgba(99,102,241,0.18), transparent 50%), radial-gradient(circle at 80% 100%, rgba(59,130,246,0.14), transparent 50%);"
+  >
+  </div>
+
+  <div class="relative max-w-6xl mx-auto">
+    <div class="reveal mb-14 md:mb-20">
+      <p class="text-sm text-white/50 tracking-widest uppercase mb-3">
+        AI Stack
+      </p>
+      <h2 class="text-4xl md:text-7xl font-semibold tracking-tight leading-[1.05]">
+        复盘不是报表<br />
+        是下一条内容的 <span class="bg-gradient-to-r from-indigo-300 via-blue-300 to-cyan-300 bg-clip-text text-transparent">修改依据</span>
+      </h2>
+      <p class="mt-6 text-lg md:text-xl text-white/60 max-w-2xl leading-relaxed">
+        {ai.tagline}
+      </p>
+    </div>
+
+    <div class="reveal grid grid-cols-3 gap-4 md:gap-8 mb-12 md:mb-16 border-y border-white/10 py-10">
+      {
+        ai.metrics.map((m) => (
+          <div class="text-center">
+            <div class="flex items-baseline justify-center">
+              <span class="text-4xl md:text-6xl font-semibold tracking-tight">
+                {m.value}
+              </span>
+              <span class="text-lg md:text-2xl font-medium ml-0.5">
+                {m.unit}
+              </span>
+            </div>
+            <p class="mt-2 text-xs md:text-sm text-white/50">{m.label}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="mb-16 md:mb-24"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+      {
+        ai.workflow.map((w) => (
+          <div class="reveal group bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 rounded-2xl p-7 md:p-8 transition-all">
+            <div class="flex items-baseline justify-between mb-5">
+              <span class="text-xs text-white/40 font-mono tracking-widest">
+                {w.step}
+              </span>
+              <span class="w-1.5 h-1.5 rounded-full bg-blue-400 group-hover:scale-150 transition-transform" />
+            </div>
+            <h3 class="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+              {w.title}
+            </h3>
+            <p class="text-sm md:text-base text-white/60 leading-relaxed mb-5">
+              {w.desc}
+            </p>
+            <div class="flex flex-wrap gap-2">
+              {w.tools.map((t) => (
+                <span class="text-[11px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-white/70">
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <p class="reveal mt-14 md:mt-20 text-center text-sm text-white/40">
+      工具负责整理，人负责判断。
+    </p>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+---
+const pillars = [
+  {
+    title: "内容编导",
+    desc: "从用户问题与IP表达中找选题，把观点写成能拍、能剪、能承接业务的脚本，并在现场和后期守住内容质量。",
+    points: [
+      "选题：热点 · 用户问题 · IP真实经历",
+      "脚本：开头吸引 · 信息承接 · 观点落点",
+      "执行：拍摄控场 · 节奏剪辑 · 发布检查",
+    ],
+  },
+  {
+    title: "IP孵化与运营",
+    desc: "既做过老板IP的0—1定位，也参与过大蓝等成熟账号的10—100内容生产，能在人物表达、平台传播与商业承接之间建立连接。",
+    points: [
+      "0—1：定位 · 内容支柱 · 起号计划",
+      "10—100：栏目迭代 · 表达优化 · 稳定生产",
+      "商业承接：热点触达 · 专业观点 · 课程咨询",
+    ],
+  },
+  {
+    title: "数据复盘与SOP",
+    desc: "复盘不止是报数，而是判断前5秒、内容承接和评论反馈，再把问题翻译成下一条视频的具体动作。",
+    points: [
+      "用Codex、Claude汇总视频数据与评论",
+      "形成个人复盘标准和可复用内容SOP",
+      "承担IP编导班内容复盘课程授课",
+    ],
+  },
+];
+---
+
+<section id="method" class="bg-white px-6 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-16">
+      <p class="text-sm text-[var(--color-ink-muted)] tracking-widest uppercase mb-3">
+        Method
+      </p>
+      <h2 class="text-4xl md:text-6xl font-semibold tracking-tight">
+        我能做什么
+      </h2>
+      <p class="mt-4 text-lg md:text-xl text-[var(--color-ink-muted)] max-w-2xl">
+        三个相互咬合的能力面，覆盖从内容生产到商业承接的完整链路。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      {
+        pillars.map((p) => (
+          <div class="reveal bg-[var(--color-bg-soft)] rounded-3xl p-8 md:p-10">
+            <h3 class="text-2xl md:text-3xl font-semibold tracking-tight mb-4">
+              {p.title}
+            </h3>
+            <p class="text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
+              {p.desc}
+            </p>
+            <ul class="mt-6 space-y-2 text-sm text-[var(--color-ink-muted)]">
+              {p.points.map((pt) => (
+                <li class="flex gap-2">
+                  <span class="mt-2 w-1 h-1 rounded-full bg-[var(--color-ink-muted)] flex-shrink-0" />
+                  <span>{pt}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,52 @@
+---
+import profile from "../content/profile.json";
+import { imgSrc } from "../utils/img";
+---
+
+<section
+  id="about"
+  class="relative min-h-screen flex flex-col items-center justify-center bg-white px-6 pt-20 pb-16"
+>
+  <div class="max-w-5xl w-full text-center">
+    {profile.edition && (
+      <p class="enter enter-1 text-[10px] md:text-xs font-mono tracking-[0.4em] text-[var(--color-ink-muted)] mb-6">
+        {profile.edition}
+      </p>
+    )}
+    <p class="enter enter-1 text-sm md:text-base text-[var(--color-ink-muted)] tracking-wider mb-6">
+      {profile.title}
+    </p>
+    <h1
+      class="enter enter-2 font-semibold text-[64px] sm:text-[96px] md:text-[140px] leading-none tracking-tight"
+    >
+      {profile.name}
+    </h1>
+    <p
+      class="enter enter-3 mt-6 text-2xl md:text-3xl text-[var(--color-ink-muted)] font-light tracking-tight"
+    >
+      {profile.tagline}
+    </p>
+    <p class="enter enter-4 mt-3 text-base md:text-lg text-[var(--color-ink-muted)] max-w-2xl mx-auto leading-relaxed">
+      {profile.summary}
+    </p>
+    <p class="enter enter-5 mt-5 text-sm text-[var(--color-ink-muted)]">
+      {profile.education}
+    </p>
+
+    <div class="enter-scale mt-14 flex flex-col items-center gap-3">
+      <img
+        src={imgSrc("/images/chenxi/portrait.png")}
+        alt={profile.name + " 头像"}
+        class="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover ring-1 ring-[var(--color-line)]"
+        loading="eager"
+      />
+      <span class="text-xs text-[var(--color-ink-muted)] tracking-widest uppercase">{profile.nameEn}</span>
+    </div>
+  </div>
+
+  <div
+    class="enter enter-5 absolute bottom-8 left-1/2 -translate-x-1/2 text-[11px] text-[var(--color-ink-muted)] tracking-[0.3em] uppercase"
+  >
+    Scroll
+  </div>
+</section>

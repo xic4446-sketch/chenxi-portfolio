@@ -1,0 +1,66 @@
+---
+import profile from "../content/profile.json";
+
+const items = [
+  {
+    label: "电话",
+    value: profile.contact.phone,
+    href: `tel:${profile.contact.phone}`,
+  },
+  {
+    label: "邮箱",
+    value: profile.contact.email,
+    href: `mailto:${profile.contact.email}`,
+  },
+  {
+    label: "微信",
+    value: profile.contact.wechat,
+    href: null,
+  },
+];
+---
+
+<section
+  id="contact"
+  class="bg-black text-white px-6 py-24 md:py-32"
+>
+  <div class="max-w-5xl mx-auto w-full">
+    <div class="text-center reveal">
+      <p class="text-sm text-white/50 tracking-widest uppercase mb-4">
+        Get in touch
+      </p>
+      <h2
+        class="text-4xl md:text-6xl font-semibold tracking-tight leading-tight"
+      >
+        想聊聊内容编导或 IP 项目？
+      </h2>
+      <p class="mt-6 text-lg md:text-xl text-white/60 max-w-2xl mx-auto">
+        欢迎通过电话、邮箱或微信联系，了解完整项目过程与作品细节。
+      </p>
+    </div>
+
+    <div class="reveal mt-14 grid grid-cols-1 md:grid-cols-3 gap-4">
+      {
+        items.map((it) => (
+          <div class="bg-white/[0.04] border border-white/10 rounded-2xl p-7 hover:bg-white/[0.08] transition-colors">
+            <p class="text-xs text-white/50 tracking-widest uppercase mb-3">
+              {it.label}
+            </p>
+            {it.href ? (
+              <a
+                href={it.href}
+                class="text-base md:text-lg font-medium tracking-tight break-all hover:text-blue-400"
+              >
+                {it.value}
+              </a>
+            ) : (
+              <p class="text-base md:text-lg font-medium tracking-tight break-all">
+                {it.value}
+              </p>
+            )}
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

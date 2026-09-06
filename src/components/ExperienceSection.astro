@@ -1,0 +1,41 @@
+---
+import experiences from "../content/experiences.json";
+---
+
+<section id="experience" class="bg-white px-6 py-24 md:py-32">
+  <div class="max-w-5xl mx-auto">
+    <div class="reveal mb-16">
+      <p class="text-sm text-[var(--color-ink-muted)] tracking-widest uppercase mb-3">
+        Experience
+      </p>
+      <h2 class="text-4xl md:text-6xl font-semibold tracking-tight">
+        从视频制作到 IP 内容编导
+      </h2>
+    </div>
+
+    <div class="space-y-10 md:space-y-12">
+      {
+        experiences.map((exp) => (
+          <div class="reveal grid grid-cols-1 md:grid-cols-[200px_1fr] gap-4 md:gap-12 pb-10 border-b border-[var(--color-line)] last:border-b-0">
+            <div class="text-sm text-[var(--color-ink-muted)] tabular-nums tracking-tight">
+              {exp.period}
+            </div>
+            <div>
+              <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                <h3 class="text-2xl md:text-3xl font-semibold tracking-tight">
+                  {exp.company}
+                </h3>
+                <span class="text-base md:text-lg text-[var(--color-ink-muted)]">
+                  {exp.role}
+                </span>
+              </div>
+              <p class="mt-3 text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed max-w-2xl">
+                {exp.summary}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

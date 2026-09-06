@@ -1,0 +1,131 @@
+[
+  {
+    "slug": "waterbubble",
+    "title": "水球泡泡",
+    "subtitle": "知识付费IP的短视频与直播内容协同",
+    "role": "IP内容编导 / 直播编导",
+    "industry": "职场 · AI · 知识付费",
+    "background": "围绕职场发展、AI应用与课程咨询搭建内容链路。短视频内容由我独立完成；直播排期和课程由团队共同推进，我主要负责内容编导与复盘。",
+    "note": "账号截图用于说明项目背景与当前规模；课程、学员成果属于项目整体交付。",
+    "stats": [
+      { "value": "90.6", "unit": "w", "label": "账号当前粉丝" },
+      { "value": "5–6", "unit": "h", "label": "单场直播素材" },
+      { "value": "2", "unit": "w", "label": "课程价格带约" }
+    ],
+    "image": "/images/chenxi/waterbubble-profile.png",
+    "contribution": [
+      "独立完成短视频选题、口播脚本、拍摄控场、剪辑与数据复盘。",
+      "围绕实时热点与职场问题，准备5–6小时直播选题和内容框架。",
+      "从直播长素材中提炼主题、重写开头、重组信息并完成二创剪辑。",
+      "与团队共同完成直播排期及直播课程，我重点负责内容编导和复盘。"
+    ],
+    "process": [
+      { "title": "内容定位", "desc": "以职场问题和AI应用为入口，连接专业观点与课程咨询。" },
+      { "title": "短视频生产", "desc": "从选题、脚本到拍摄控场、剪辑，独立跑完内容链路。" },
+      { "title": "直播协同", "desc": "围绕单场直播搭建5–6小时内容框架，与团队共同排期交付。" },
+      { "title": "复盘迭代", "desc": "结合视频数据与评论，定位开头、承接与价值表达问题。" }
+    ],
+    "gallery": [
+      { "image": "/images/chenxi/waterbubble-profile.png", "caption": "水球泡泡账号项目背景" },
+      { "image": "/images/chenxi/qieman-schedule.jpg", "caption": "年度活动与课程排期｜团队项目" },
+      { "image": "/images/chenxi/qieman-monthly-plan.jpg", "caption": "月成长计划｜团队项目" },
+      { "image": "/images/chenxi/qieman-member-assets.jpg", "caption": "会员内容资产｜团队项目" }
+    ]
+  },
+  {
+    "slug": "dalan",
+    "title": "大蓝",
+    "subtitle": "千万级财经IP成熟期内容编导",
+    "role": "新媒体编导",
+    "industry": "财经 · 商业认知",
+    "background": "在账号成熟期参与10—100阶段的内容生产，围绕商业认知、人生投资与发展方向完成内容编导工作，不将账号既有体量包装为个人增长成果。",
+    "note": "账号截图仅用于说明项目背景和体量；截图中可见的作品不作为本人作品展示。",
+    "stats": [
+      { "value": "1039.7", "unit": "w", "label": "账号当前粉丝" },
+      { "value": "9322.3", "unit": "w", "label": "账号累计获赞" },
+      { "value": "5", "unit": "环", "label": "参与内容链路" }
+    ],
+    "image": "/images/chenxi/dalan-profile.jpg",
+    "contribution": [
+      "参与成熟账号的选题策划、口播脚本、拍摄控场、剪辑与数据复盘。",
+      "将财经与商业议题转译为更适合短视频传播的观点型表达。",
+      "在IP原有表达风格和账号调性内，提升选题的冲突感与脚本的信息密度。",
+      "根据发布反馈复盘内容表现，为后续选题和表达方式提供调整依据。"
+    ],
+    "process": [
+      { "title": "选题判断", "desc": "从商业热点、用户焦虑与IP认知优势中筛选可表达议题。" },
+      { "title": "脚本结构", "desc": "强化开头观点、论证节奏和结尾落点，保留IP个人表达。" },
+      { "title": "拍摄控场", "desc": "现场校准状态、节奏和有效表达，保证内容可剪辑性。" },
+      { "title": "剪辑复盘", "desc": "完成节奏剪辑，并结合数据反馈调整下一轮内容。" }
+    ],
+    "gallery": [
+      { "image": "/images/chenxi/dalan-profile.jpg", "caption": "大蓝账号项目背景｜可见作品不作为本人作品展示" }
+    ]
+  },
+  {
+    "slug": "boss-ip",
+    "title": "老板IP孵化",
+    "subtitle": "从账号定位到稳定内容生产",
+    "role": "新媒体编导 / IP孵化",
+    "industry": "香港生活 · 身份规划",
+    "background": "参与8位老板IP及相关账号内容生产，覆盖0—1定位与成熟期迭代。代表账号包括HK大表姐、Kelly姐姐HK，负责选题、脚本、拍摄控场、剪辑和数据复盘。",
+    "note": "以下增长与播放数据对应本人实际参与的代表账号。",
+    "stats": [
+      { "value": "10", "unit": "w+", "label": "HK两个月涨粉" },
+      { "value": "1000", "unit": "w+", "label": "HK单条最高播放" },
+      { "value": "2", "unit": "w+", "label": "Kelly月均涨粉" },
+      { "value": "200", "unit": "w+", "label": "Kelly单条最高播放" }
+    ],
+    "image": "/images/chenxi/hk-profile.jpg",
+    "contribution": [
+      "参与老板IP的0—1定位，梳理身份标签、内容支柱、用户需求与起号计划。",
+      "围绕香港生活、身份差异和用户高频问题，持续完成选题与口播脚本。",
+      "负责拍摄控场与剪辑，统一人物表达、镜头节奏、字幕和封面风格。",
+      "跟进数据复盘，用播放、互动和线索反馈调整选题及内容结构。"
+    ],
+    "process": [
+      { "title": "定位拆解", "desc": "从人物经历、专业资源与目标用户中确定差异化标签。" },
+      { "title": "栏目搭建", "desc": "形成稳定的选题支柱与可持续更新的内容方向。" },
+      { "title": "生产执行", "desc": "打通脚本、拍摄控场、剪辑与发布前质量检查。" },
+      { "title": "数据迭代", "desc": "把高表现主题和用户反馈反哺到下一轮内容。" }
+    ],
+    "gallery": [
+      { "image": "/images/chenxi/hk-profile.jpg", "caption": "HK大表姐｜本人参与画面中的部分作品" },
+      { "image": "/images/chenxi/kelly-profile.jpg", "caption": "Kelly姐姐HK｜本人参与画面中的部分作品" }
+    ]
+  },
+  {
+    "slug": "dingxiang",
+    "title": "丁香妈妈 × 丁香医生",
+    "subtitle": "课程与品牌视频的完整后期制作",
+    "role": "视频制作实习生",
+    "industry": "母婴 · 医疗健康",
+    "background": "前期参与丁香妈妈App家庭课程制作，后期参与丁香医生抖音短视频成熟期内容剪辑，并完成课程及宣传片的拍摄、剪辑、AE包装、MG动画与调色。",
+    "note": "本项目职责聚焦视频制作与后期呈现，不包含选题、脚本和数据运营。",
+    "stats": [
+      { "value": "2", "unit": "类", "label": "课程与宣传片" },
+      { "value": "5", "unit": "项", "label": "制作环节" },
+      { "value": "10–100", "unit": "", "label": "成熟期内容剪辑" }
+    ],
+    "image": "/images/chenxi/dingxiang-course-scene.jpg",
+    "contribution": [
+      "参与家庭课程的现场拍摄与素材管理，确保讲解、演示和特写素材完整。",
+      "根据课程结构完成剪辑、节奏调整、字幕与信息层级梳理。",
+      "使用AE完成版式包装，并制作MG动画辅助知识点理解。",
+      "参与品牌宣传片剪辑与调色，统一画面质感和品牌表达。"
+    ],
+    "process": [
+      { "title": "拍摄执行", "desc": "配合课程和宣传片场景完成机位、素材与现场拍摄。" },
+      { "title": "结构剪辑", "desc": "围绕教学逻辑或品牌叙事组织素材与节奏。" },
+      { "title": "视觉包装", "desc": "通过AE包装、字幕层级与MG动画强化信息传达。" },
+      { "title": "成片调色", "desc": "统一色彩、声音与输出规格，完成最终交付。" }
+    ],
+    "gallery": [
+      { "image": "/images/chenxi/dingxiang-course-idea.jpg", "caption": "丁香妈妈家庭课程｜课程画面" },
+      { "image": "/images/chenxi/dingxiang-course-scene.jpg", "caption": "丁香妈妈家庭课程｜实拍画面" },
+      { "image": "/images/chenxi/dingxiang-promo-expert.jpg", "caption": "品牌宣传片｜专家信息包装" },
+      { "image": "/images/chenxi/dingxiang-promo-slogan.jpg", "caption": "品牌宣传片｜视觉包装" },
+      { "image": "/images/chenxi/dingxiang-promo-family.jpg", "caption": "品牌宣传片｜场景画面" }
+    ]
+  }
+]

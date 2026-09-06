@@ -1,0 +1,85 @@
+---
+import cases from "../content/cases.json";
+import { base, imgSrc } from "../utils/img";
+---
+
+<section id="cases" class="bg-[var(--color-bg-soft)]">
+  <div class="px-6 pt-24 pb-12 max-w-6xl mx-auto reveal">
+    <p class="text-sm text-[var(--color-ink-muted)] tracking-widest uppercase mb-3">
+      Cases
+    </p>
+    <h2 class="text-4xl md:text-6xl font-semibold tracking-tight">
+      代表案例
+    </h2>
+  </div>
+
+  {
+    cases.map((c, i) => (
+      <div class={`px-6 py-20 md:py-32 ${i % 2 === 0 ? "bg-[var(--color-bg-soft)]" : "bg-white"}`}>
+        <div class={`max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center reveal ${i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""}`}>
+          <div>
+            <div class="aspect-[3/4] max-w-[420px] mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-black/10">
+              {c.image ? (
+                <img
+                  src={imgSrc(c.image)}
+                  alt={c.title}
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              ) : (
+                <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-600 text-white">
+                  <span class="text-5xl md:text-6xl font-semibold tracking-tight">
+                    {c.title}
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div>
+            <p class="text-sm text-[var(--color-ink-muted)] tracking-widest uppercase mb-3">
+              {c.industry} · {c.role}
+            </p>
+            <h3 class="text-3xl md:text-5xl font-semibold tracking-tight">
+              {c.title}
+            </h3>
+            <p class="mt-3 text-xl md:text-2xl text-[var(--color-ink-muted)] font-light">
+              {c.subtitle}
+            </p>
+            <p class="mt-6 text-base md:text-lg text-[var(--color-ink-muted)] leading-relaxed">
+              {c.background}
+            </p>
+
+            <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6">
+              {c.stats.map((s) => (
+                <div>
+                  <div class="flex items-baseline">
+                    <span class="text-3xl md:text-4xl font-semibold tracking-tight">
+                      {s.value}
+                    </span>
+                    <span class="text-base md:text-lg font-medium ml-0.5">
+                      {s.unit}
+                    </span>
+                  </div>
+                  <p class="mt-1 text-xs md:text-sm text-[var(--color-ink-muted)]">
+                    {s.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <a
+              href={`${base}/cases/${c.slug}`}
+              class="inline-flex items-center gap-1 mt-10 text-base text-blue-600 hover:gap-2 transition-all"
+            >
+              了解更多
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M9 18l6-6-6-6" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</section>

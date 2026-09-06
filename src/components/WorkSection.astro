@@ -1,0 +1,67 @@
+---
+import videos from "../content/videos.json";
+import { imgSrc } from "../utils/img";
+---
+
+<section id="works" class="bg-black text-white px-6 py-24 md:py-32">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal mb-16">
+      <p class="text-sm text-white/50 tracking-widest uppercase mb-3">
+        Works
+      </p>
+      <h2 class="text-4xl md:text-6xl font-semibold tracking-tight">
+        代表作品
+      </h2>
+      <p class="mt-4 text-lg text-white/60">
+        以下展示本人实际参与的账号、课程与宣传片画面；独立完成、团队参与和项目数据均按职责标注。
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 md:gap-6">
+      {
+        videos.map((v) => (
+          <article
+            class="reveal group block bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 rounded-2xl overflow-hidden transition-all"
+          >
+            <div class="grid grid-cols-[120px_1fr] sm:grid-cols-[160px_1fr]">
+              {v.thumb && (
+                <div class="aspect-[9/16] overflow-hidden bg-black border-r border-white/10">
+                  <img
+                    src={imgSrc(v.thumb)}
+                    alt={v.title}
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                    loading="lazy"
+                  />
+                </div>
+              )}
+              <div class="p-5 md:p-7 flex flex-col">
+                <div class="flex items-center justify-between text-[11px] text-white/50 mb-4">
+                  <span>{v.ip}</span>
+                  <span class="tabular-nums">项目画面</span>
+                </div>
+                {v.category && (
+                  <p class="text-[10px] uppercase tracking-widest text-blue-300/70 mb-2">
+                    {v.category}
+                  </p>
+                )}
+                <h3 class="text-base md:text-xl font-semibold tracking-tight leading-snug mb-2">
+                  {v.title}
+                </h3>
+                {v.desc && (
+                  <p class="text-[11px] md:text-sm text-white/50 leading-relaxed line-clamp-3 md:line-clamp-none mb-3 md:mb-5">
+                    {v.desc}
+                  </p>
+                )}
+                <div class="mt-auto flex items-center justify-between">
+                  <span class="text-xs md:text-sm text-blue-300 leading-relaxed">
+                    职责：{v.role}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
