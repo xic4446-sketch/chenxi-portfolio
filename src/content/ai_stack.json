@@ -1,34 +1,53 @@
 {
-  "tagline": "让数据、评论和内容判断，回到下一条视频的具体修改。",
-  "metrics": [
-    { "value": "2", "unit": "个", "label": "常用AI工具" },
-    { "value": "4", "unit": "维", "label": "核心复盘维度" },
-    { "value": "1", "unit": "套", "label": "可复用复盘流程" }
-  ],
-  "workflow": [
+  "tagline": "从选题数据到项目SOP，把判断、执行与团队协作沉淀成可复用的内容资产。",
+  "items": [
     {
-      "step": "01",
-      "title": "数据与评论汇总",
-      "desc": "使用Codex、Claude整理视频数据与评论，减少机械归档，把注意力留给内容判断。",
-      "tools": ["Codex", "Claude", "项目数据表"]
+      "image": "/images/review/topic-data.jpeg",
+      "title": "选题数据采集",
+      "desc": "AI工具跨平台采集对标账号高赞内容，按方向／形式／适配人群结构化整理，作为团队选题雷达。",
+      "tag": "TOPIC"
     },
     {
-      "step": "02",
-      "title": "问题定位",
-      "desc": "重点判断前5秒是否成立、内容能否继续承接，以及评论区真正关心的问题。",
-      "tools": ["开头吸引力", "内容承接", "评论反馈"]
+      "image": "/images/review/content-review.jpeg",
+      "title": "内容复盘",
+      "desc": "每条视频上线后多维度数据回流：完播率、爆款率、互动率、内容评分，沉淀可复用模板。",
+      "tag": "CONTENT"
     },
     {
-      "step": "03",
-      "title": "修改建议",
-      "desc": "把数据表现转成下一轮可执行动作：换选题角度、重写开头、调整结构或强化价值点。",
-      "tools": ["选题调整", "脚本重构", "剪辑节奏"]
+      "image": "/images/review/ads-review.jpeg",
+      "title": "投流复盘",
+      "desc": "加热预算、CTR、单条线索成本、ROI全维度对比，指导素材与定向迭代。",
+      "tag": "ADS"
     },
     {
-      "step": "04",
-      "title": "SOP与授课",
-      "desc": "沉淀个人复盘标准和可复用SOP，并将方法应用于IP编导班的内容复盘课程。",
-      "tools": ["复盘标准", "内容SOP", "复盘课"]
+      "image": "/images/review/data-review.jpeg",
+      "title": "数据复盘",
+      "desc": "账号／直播间／私域全链路数据，含AI同环比对照、月度异动告警与复盘。",
+      "tag": "DATA"
+    },
+    {
+      "image": "/images/review/schedule-waterbubble.png",
+      "title": "IP时间表",
+      "desc": "「水球泡」每周排期日历：拍摄、直播、选题会全部前置规划。",
+      "tag": "SCHEDULE"
+    },
+    {
+      "image": "/images/review/obsidian-waterbubble.png",
+      "title": "Obsidian知识库",
+      "desc": "个人IP方法论沉淀，关系图谱可视化，方法论可检索、可跨项目复用。",
+      "tag": "KNOWLEDGE"
+    },
+    {
+      "image": "/images/review/shooting-sop.png",
+      "title": "拍摄SOP",
+      "desc": "开机前30分钟检查清单／设备规则／灯光与机位／场记／商单守则——让拍摄良品率90%+。",
+      "tag": "SHOOTING"
+    },
+    {
+      "image": "/images/review/subscription-sop.png",
+      "title": "订阅项目制作SOP",
+      "desc": "7章手册：选题筛选→建联→前采→内容→审核→策划→物料，覆盖整个订阅项目链路。",
+      "tag": "PIPELINE"
     }
   ]
 }

@@ -1,19 +1,11 @@
 [
   {
-    "title": "水球泡泡短视频内容",
-    "ip": "且曼 · 水球泡泡",
-    "role": "独立完成选题、脚本、拍摄控场、剪辑与数据复盘",
-    "category": "职场 / AI / 知识付费",
-    "desc": "从热点与真实职场问题切入，将IP观点转化为可传播、可承接课程咨询的短视频内容。",
-    "thumb": "/images/chenxi/waterbubble-profile.png"
-  },
-  {
-    "title": "大蓝成熟期内容编导",
-    "ip": "银河商学院 · 大蓝",
+    "title": "Kelly姐姐HK账号内容",
+    "ip": "银河商学院 · Kelly姐姐HK",
     "role": "参与选题、脚本、拍摄控场、剪辑与数据复盘",
-    "category": "财经 / 商业认知",
-    "desc": "账号截图仅用于说明项目体量；截图中可见作品不作为本人作品展示。",
-    "thumb": "/images/chenxi/dalan-profile.jpg"
+    "category": "香港生活 / 女性成长",
+    "desc": "围绕双城生活与女性成长持续输出，兼顾人物亲和力和实用信息密度。",
+    "thumb": "/images/chenxi/work-kelly.jpg"
   },
   {
     "title": "HK大表姐账号内容",
@@ -21,30 +13,22 @@
     "role": "参与选题、脚本、拍摄控场、剪辑与数据复盘",
     "category": "香港生活 / 身份规划",
     "desc": "以香港与内地差异、身份规划和生活方式为内容入口，建立鲜明人物表达。",
-    "thumb": "/images/chenxi/hk-profile.jpg"
+    "thumb": "/images/chenxi/work-hk.png"
   },
   {
-    "title": "Kelly姐姐HK账号内容",
-    "ip": "银河商学院 · Kelly姐姐HK",
-    "role": "参与选题、脚本、拍摄控场、剪辑与数据复盘",
-    "category": "香港生活 / 女性成长",
-    "desc": "围绕双城生活与女性成长持续输出，兼顾人物亲和力和实用信息密度。",
-    "thumb": "/images/chenxi/kelly-profile.jpg"
-  },
-  {
-    "title": "丁香妈妈家庭课程",
-    "ip": "丁香园 · 丁香妈妈",
+    "title": "丁香医生短视频",
+    "ip": "丁香园 · 丁香医生",
     "role": "参与拍摄、剪辑、AE包装、MG动画与调色",
-    "category": "家庭教育课程",
-    "desc": "围绕儿童成长和家庭互动场景完成课程视频制作，使知识点更易理解和观看。",
-    "thumb": "/images/chenxi/dingxiang-course-scene.jpg"
+    "category": "医疗健康 / 品牌内容",
+    "desc": "围绕专业健康知识完成画面节奏、信息包装和成片呈现。",
+    "thumb": "/images/chenxi/work-dingxiang.png"
   },
   {
-    "title": "丁香品牌宣传片",
-    "ip": "丁香园",
-    "role": "参与拍摄、剪辑、AE包装、MG动画与调色",
-    "category": "品牌宣传片",
-    "desc": "通过人物、品牌信息和家庭场景的组合，完成宣传片的视觉包装与成片交付。",
-    "thumb": "/images/chenxi/dingxiang-promo-family.jpg"
+    "title": "水球泡短视频内容",
+    "ip": "且曼 · 水球泡",
+    "role": "独立完成选题、脚本、拍摄控场、剪辑与数据复盘",
+    "category": "职场 / AI / 知识付费",
+    "desc": "从热点与真实职场问题切入，将IP观点转化为可传播、可承接课程咨询的短视频内容。",
+    "thumb": "/images/chenxi/work-waterbubble.png"
   }
 ]

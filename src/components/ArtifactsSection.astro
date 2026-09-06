@@ -2,9 +2,9 @@
 import data from "../content/artifacts.json";
 import { imgSrc } from "../utils/img";
 
-// 前 4 项为内容与排期，后 4 项为课程交付与复盘
-const dataItems = data.items.slice(0, 4);
-const teamItems = data.items.slice(4);
+// 前 2 项为内容与排期，后 4 项为课程交付与复盘
+const dataItems = data.items.slice(0, 2);
+const teamItems = data.items.slice(2);
 ---
 
 <section id="artifacts" class="bg-[var(--color-bg-soft)] px-6 py-24 md:py-32">
@@ -25,7 +25,7 @@ const teamItems = data.items.slice(4);
       <p class="reveal text-xs text-[var(--color-ink-muted)] tracking-widest uppercase mb-5">
         IP Content & Planning · IP 内容与排期
       </p>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-5 max-w-3xl">
         {
           dataItems.map((it) => (
             <figure class="reveal group bg-white rounded-2xl overflow-hidden border border-[var(--color-line)] hover:shadow-2xl hover:shadow-black/10 transition-shadow duration-500">

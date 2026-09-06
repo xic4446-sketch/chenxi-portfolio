@@ -1,7 +1,7 @@
 [
   {
     "slug": "waterbubble",
-    "title": "水球泡泡",
+    "title": "水球泡",
     "subtitle": "知识付费IP的短视频与直播内容协同",
     "role": "IP内容编导 / 直播编导",
     "industry": "职场 · AI · 知识付费",
@@ -26,7 +26,7 @@
       { "title": "复盘迭代", "desc": "结合视频数据与评论，定位开头、承接与价值表达问题。" }
     ],
     "gallery": [
-      { "image": "/images/chenxi/waterbubble-profile.png", "caption": "水球泡泡账号项目背景" },
+      { "image": "/images/chenxi/waterbubble-profile.png", "caption": "水球泡账号项目背景" },
       { "image": "/images/chenxi/qieman-schedule.jpg", "caption": "年度活动与课程排期｜团队项目" },
       { "image": "/images/chenxi/qieman-monthly-plan.jpg", "caption": "月成长计划｜团队项目" },
       { "image": "/images/chenxi/qieman-member-assets.jpg", "caption": "会员内容资产｜团队项目" }

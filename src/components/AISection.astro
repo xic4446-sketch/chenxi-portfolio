@@ -1,5 +1,6 @@
 ---
 import ai from "../content/ai_stack.json";
+import { imgSrc } from "../utils/img";
 ---
 
 <section id="ai" class="bg-black text-white px-6 py-24 md:py-32 relative overflow-hidden">
@@ -23,50 +24,33 @@ import ai from "../content/ai_stack.json";
       </p>
     </div>
 
-    <div class="reveal grid grid-cols-3 gap-4 md:gap-8 mb-12 md:mb-16 border-y border-white/10 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
       {
-        ai.metrics.map((m) => (
-          <div class="text-center">
-            <div class="flex items-baseline justify-center">
-              <span class="text-4xl md:text-6xl font-semibold tracking-tight">
-                {m.value}
-              </span>
-              <span class="text-lg md:text-2xl font-medium ml-0.5">
-                {m.unit}
-              </span>
+        ai.items.map((item) => (
+          <article class="reveal group bg-white/[0.05] hover:bg-white/[0.09] border border-white/10 rounded-2xl overflow-hidden transition-all">
+            <div class="aspect-[4/3] overflow-hidden bg-white">
+              <img
+                src={imgSrc(item.image)}
+                alt={item.title}
+                class="w-full h-full object-cover object-top group-hover:scale-[1.025] transition-transform duration-700"
+                loading="lazy"
+              />
             </div>
-            <p class="mt-2 text-xs md:text-sm text-white/50">{m.label}</p>
-          </div>
-        ))
-      }
-    </div>
-
-    <div class="mb-16 md:mb-24"></div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-      {
-        ai.workflow.map((w) => (
-          <div class="reveal group bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 rounded-2xl p-7 md:p-8 transition-all">
-            <div class="flex items-baseline justify-between mb-5">
-              <span class="text-xs text-white/40 font-mono tracking-widest">
-                {w.step}
-              </span>
-              <span class="w-1.5 h-1.5 rounded-full bg-blue-400 group-hover:scale-150 transition-transform" />
-            </div>
-            <h3 class="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
-              {w.title}
-            </h3>
-            <p class="text-sm md:text-base text-white/60 leading-relaxed mb-5">
-              {w.desc}
-            </p>
-            <div class="flex flex-wrap gap-2">
-              {w.tools.map((t) => (
-                <span class="text-[11px] md:text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-white/70">
-                  {t}
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-[11px] text-white/45 font-mono tracking-widest">
+                  {item.tag}
                 </span>
-              ))}
+                <span class="w-1.5 h-1.5 rounded-full bg-blue-400 group-hover:scale-150 transition-transform" />
+              </div>
+              <h3 class="text-xl md:text-2xl font-semibold tracking-tight mb-3">
+                {item.title}
+              </h3>
+              <p class="text-sm md:text-base text-white/60 leading-relaxed">
+                {item.desc}
+              </p>
             </div>
-          </div>
+          </article>
         ))
       }
     </div>
