@@ -18,8 +18,28 @@ import { base, imgSrc } from "../utils/img";
       <div class={`px-6 py-20 md:py-32 ${i % 2 === 0 ? "bg-[var(--color-bg-soft)]" : "bg-white"}`}>
         <div class={`max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center reveal ${i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""}`}>
           <div>
-            <div class="aspect-[3/4] max-w-[420px] mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-black/10">
-              {c.image ? (
+            {c.slug === "dingxiang" ? (
+              <div class="max-w-[560px] mx-auto py-4 md:py-8">
+                <figure class="aspect-video rounded-2xl overflow-hidden bg-black shadow-2xl shadow-black/10">
+                  <img
+                    src={imgSrc("/images/chenxi/dingxiang-promo-family.jpg")}
+                    alt="丁香品牌宣传片家庭场景"
+                    class="w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
+                </figure>
+                <figure class="relative z-10 w-[88%] ml-auto -mt-5 md:-mt-10 aspect-video rounded-2xl overflow-hidden bg-black border-[6px] border-white shadow-2xl shadow-black/15">
+                  <img
+                    src={imgSrc("/images/chenxi/dingxiang-promo-expert.jpg")}
+                    alt="丁香品牌宣传片专家介绍画面"
+                    class="w-full h-full object-cover object-center"
+                    loading="lazy"
+                  />
+                </figure>
+              </div>
+            ) : (
+              <div class="aspect-[3/4] max-w-[420px] mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-black/10">
+                {c.image ? (
                 <img
                   src={imgSrc(c.image)}
                   alt={c.title}
@@ -32,8 +52,9 @@ import { base, imgSrc } from "../utils/img";
                     {c.title}
                   </span>
                 </div>
-              )}
-            </div>
+                )}
+              </div>
+            )}
           </div>
 
           <div>
