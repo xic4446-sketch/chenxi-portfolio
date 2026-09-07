@@ -17,6 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAGES_BASE: /chenxi-portfolio/
+      GITHUB_PAGES_SITE: https://xic4446-sketch.github.io
     steps:
       - name: Checkout
         uses: actions/checkout@v4
